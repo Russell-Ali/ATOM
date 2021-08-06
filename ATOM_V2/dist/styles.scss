@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+$black: #02111d;
+$white: #fdfffc;
+$linkClr: #00d4f5;
+body {
+  font-family: "Roboto", sans-serif;
+}
+.git {
+  transition: 200ms all ease;
+}
+#bg {
+  background: $white;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav-ul {
+  margin: 0;
+  padding: 0;
+  background: $black;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.nav-ul li {
+  margin-right: 1rem;
+}
+.nav-ul a {
+  outline: none;
+  color: $white;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.nav-ul li a {
+  transition: 200ms all ease;
+}
+.nav-ul li a:hover {
+  color: $linkClr;
+}
+.txt {
+  margin-top: 10rem;
+  margin: 0 5rem;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.txt p {
+  color: $black;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.4rem;
+  cursor: default;
+}
